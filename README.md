@@ -8,7 +8,7 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
 
 ### Links
 
-- [Live Site URL](https://Tipcalculator01.netlify.app)
+- [Live Site URL](https://tipscalculator01.netlify.app)
 
 ## My process
 
