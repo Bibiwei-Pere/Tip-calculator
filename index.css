@@ -1,0 +1,248 @@
+:root {
+    /* Primary */
+    --Strong-cyan: hsl(172, 67%, 45%);
+
+    /* Neutral */
+    --Very-dark-cyan: hsl(183, 100%, 15%);
+    --Dark-grayish-cyan: hsl(186, 14%, 43%);
+    --Grayish-cyan: hsl(184, 14%, 56%);
+    --Light-grayish-cyan: hsl(185, 41%, 84%);
+    --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+    font-family: 'Space Mono', monospace;
+    justify-content: center;
+    font-size: 16px;
+    min-height: 100vh;
+    color: var(--Very-dark-cyan);
+    background-color: var(--Light-grayish-cyan);
+}
+
+h1 {
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: var(--Very-dark-cyan);
+}
+
+h2 {
+    font-size: 34px;
+    font-weight: bold;
+    color: var(--Strong-cyan);
+}
+
+span {
+    color: var(--Grayish-cyan);
+}
+
+.container {
+    width: 697px;
+    display: flex;
+    align-items: center;
+    padding: 20px 20px 20px 40px;
+    gap: 35px;
+    background-color: var(--White);
+    border-radius: 10px;
+}
+
+.wrapper_1 {
+    width: 300px;    
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.wrapper_1 div p {
+    margin-bottom: 13px;
+}
+
+.sub_wrapper_1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.l_bill, .l_number {
+    display: flex;
+    justify-content: space-between;
+}
+
+.l_bill p, .l_number p {
+    font-size: 13px;
+    right: 0;
+}
+.button_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.button_wrapper div {
+    display: flex;
+    gap: 8px;
+}
+
+.button_wrapper_mobile {
+    display: none;
+}
+
+button {
+    width: 32.3%;
+    font-size: 19px;
+    padding: 8px 0;
+    background-color: var(--Very-dark-cyan);
+    color: var(--White);
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+button:hover, button:focus, button:active {
+    color: var(--Very-dark-cyan);
+    background-color: var(--Light-grayish-cyan);
+}
+
+.b_input {
+    height: 38px;
+    font-size: 17px;
+    width: 32.3%;
+    font-weight: bold;
+}
+
+label {
+    margin-bottom: 6px;
+}
+
+input {
+    border-radius: 5px;
+    background: var(--Very-light-grayish-cyan);
+    padding: 4px 13px;
+    border: 2px solid var(--Very-light-grayish-cyan);
+    height: 40px;
+    outline: none;
+    font-size: 24px;
+    text-align: right;
+}
+
+input:hover, input:active {
+    border: 2px solid var(--Strong-cyan);
+}
+
+#bill {
+    background-image: url("/images/icon-dollar.svg");
+    background-repeat: no-repeat;
+    background-position: 14px 11px;
+}
+
+#number_people {
+    background-image: url("/images/icon-person.svg");
+    background-repeat: no-repeat;
+    background-position: 14px 11px;   
+}
+
+.wrapper_2 {
+    width: 300px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border-radius: 10px;
+    color: var(--White);
+    padding: 25px;
+    background-color: var(--Very-dark-cyan);
+}
+
+.sub-wrapper_1, .sub-wrapper_2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+    align-items: center;
+}
+
+.btn {
+    background-color: var(--Strong-cyan);
+    width: 100%;
+    margin-top: 105px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: var(--Very-dark-cyan);
+}
+
+@media (max-width: 710px) {
+    body {
+        margin: 60px auto;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 40px;
+        width: 100%;
+        border-radius: 25px;
+    }
+
+    .wrapper_1 {
+        width: 100%;
+    }
+
+    .button_wrapper_mobile {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .button_wrapper_mobile div {
+        display: flex;
+        gap: 8px;
+    }
+    
+    .button_wrapper {
+        display: none;
+    }
+
+    button {
+        width: 50%;
+    }
+    
+    .b_input {
+        width: 50%;
+    }
+
+    .wrapper_2 {
+        width: 100%;
+    }
+
+    
+}
+
+/* Footer */
+.attribution {
+    bottom: 1rem;
+    right: 5rem;
+    font-size: 11px;
+    text-align: center;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    opacity: 0.5;
+  }
+
+  .attribution:hover {
+    opacity: 1;
+  }
+
+  .attribution a {
+    text-decoration: none;
+    font-weight: bold;
+  }

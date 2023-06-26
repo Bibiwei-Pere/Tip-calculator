@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/index.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>SPLI <br> TTER</h1>
+  <main class="container">
+    <section class="wrapper_1">
+      <div class="sub_wrapper_1">
+        <div class="l_bill">
+          <label for="bill">Bill</label><p id="errbill"></p>
+        </div>
+        <input id="bill" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" maxlength="17" placeholder="0">
+      </div>
+      <div>
+        <p>Select Tip %</p>
+        <div class="button_wrapper">
+          <div>
+            <button id="select1" value="0.05">5%</button>
+            <button id="select2" value="0.10">10%</button>
+            <button id="select3" value="0.15">15%</button>
+          </div>
+          <div>
+            <button id="select4" value="0.25">25%</button>
+            <button id="select5" value="0.50">50%</button>
+            <input  id="select6" class="b_input" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" maxlength="3" placeholder="Custom">
+          </div>
+        </div>
+        <div class="button_wrapper_mobile">
+          <div>
+            <button id="select1m" value="0.05">5%</button>
+            <button id="select2m" value="0.10">10%</button>
+          </div>
+          <div>
+            <button id="select3m" value="0.15">15%</button>
+            <button id="select4m" value="0.25">25%</button>
+          </div>
+          <div>
+            <button id="select5m" value="0.50">50%</button>
+            <input  id="select6m" class="b_input" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" maxlength="3" placeholder="Custom">
+          </div>
+        </div>
+      </div>
+      <div class="sub_wrapper_1">
+        <div class="l_number">
+          <label for="number_people">Number of People</label><p id="errnum"></p>
+        </div>
+        <input id="number_people" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" maxlength="15" placeholder="0">
+      </div>
+    </section>
+    <section class="wrapper_2">
+      <div class="sub-wrapper_1">
+        <div>
+          <p>Tip Amount</p>
+          <span>/ person</span>
+        </div>
+        <h2 id="amount">$0.00</h2>
+      </div>
+      <div class="sub-wrapper_2">
+        <div>
+          <p>Total</p>
+          <span>/ person</span>
+        </div>
+        <h2 id="total">$0.00</h2>
+      </div>
+      <button id="btn-completed" class="btn">Reset</button>
+    </section>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/Bibiwei-Pere" target="_blank">Bibiwei Pere</a>.
+  </div>
+  <script src="/script.js"></script>
+</body>
+</html>
